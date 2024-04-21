@@ -5,7 +5,7 @@ provider "aws" {}
 terraform {
   backend "s3" {
     bucket              = "b57-tf-state-buckett"
-    key                 = "dev/localmod/terraform.tfstate"
+    key                 = "dev/ec2/terraform.tfstate"
     region              = "us-east-1"
   }
 }
