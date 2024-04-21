@@ -6,7 +6,7 @@ data "aws_ami" "ami" {
 
 # Defining the resources 
 resource "aws_instance" "checker" {
-  ami                       = data.aws_ami.ami.id 
+  ami                       = "ami-072983368f2a6eab5" 
   instance_type             = "t3.micro"
   count                     = 3
 
