@@ -1,7 +1,7 @@
 data "aws_ami" "ami" {
   most_recent      = true
   name_regex       = "DevOps-LabImage-Centos-8"
-  owners           = ["7673-9781-3969"]
+  owners           = ["767397813969"]
 }
 
 # Defining the resources 
