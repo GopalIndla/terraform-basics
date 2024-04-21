@@ -1,14 +1,9 @@
-data "aws_ami" "ami" {
-  most_recent      = true
-  name_regex       = "DevOps-LabImage-Centos-8"
-  owners           = ["767397813969"]
-}
 
 # Defining the resources 
 resource "aws_instance" "checker" {
   ami                       = "ami-072983368f2a6eab5" 
   instance_type             = "t3.micro"
-  count                     = 3
+  count                     = 1
 
   tags = {
     Name = "checker-instance-${count.index+1}"
